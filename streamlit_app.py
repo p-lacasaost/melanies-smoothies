@@ -17,7 +17,7 @@ st.write('The name on the smoothie will be: ', name_on_order)
 
 
 from snowflake.snowpark.functions import col, when_matched
-session = get_active_session()
+#session = get_active_session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
 
 
